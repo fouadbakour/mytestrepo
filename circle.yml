@@ -18,7 +18,7 @@ test:
         #CODE_SIGN_IDENTITY=     # as it will be done in the deployment step
         #PROVISIONING_PROFILE=
         #-sdk iphonesimulator
-        -destination 'platform=iOS Simulator,OS=9.0,name=iPhone 6'
+        -destination "platform=iOS Simulator,OS=9.0,name=iPhone 6"
         -workspace project.xcworkspace
         -scheme "testappNewScheme"
         clean build test |
