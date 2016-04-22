@@ -1,7 +1,7 @@
 general:
   # if the application is *not* in the root of the repo but
   # in the sub-directory called "ios-app"
-  build_dir: ios-app
+  # build_dir: ios-app
 
 machine:
   xcode:
@@ -15,12 +15,12 @@ test:
     - set -o pipefail &&
       xcodebuild
         CODE_SIGNING_REQUIRED=NO # no need to do code signing at this point
-        CODE_SIGN_IDENTITY=      # as it will be done in the deployment step
+        CODE_SIGN_IDENTITY=iPhone Distribution: Fouad Bakour (LPSJ2534Z4)  # as it will be done in the deployment step
         PROVISIONING_PROFILE=
         -sdk iphonesimulator
         -destination 'platform=iOS Simulator,OS=9.0,name=iPhone 6'
-        -workspace MyWorkspace.xcworkspace
-        -scheme "My Scheme"
+        -workspace project.xcworkspace
+        -scheme "testappNewScheme"
         clean build test |
       tee $CIRCLE_ARTIFACTS/xcode_raw.log |
       xcpretty --color --report junit --output $CIRCLE_TEST_REPORTS/xcode/results.xml
@@ -30,7 +30,7 @@ deployment:
     branch: master
       commands:
         # this will build the ipa file
-        - gym --scheme "App" --workspace "App.xcworkspace"
+        - gym --scheme "testappNewScheme" --workspace "project.xcworkspace"
         - ipa distribute:crashlytics
             --crashlytics_path Crashlytics.framework
             --api_token    "$CRASHLYTICS_API_KEY"
