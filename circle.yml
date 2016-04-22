@@ -11,4 +11,4 @@ deployment:
     branch: master
       commands:
         # this will build the ipa file
-        -gym --workspace "project.xcworkspace" --scheme "testappScheme" --clean
+        -gym:
