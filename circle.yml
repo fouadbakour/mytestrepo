@@ -7,9 +7,8 @@ machine:
   xcode:
     version: "7.2"
 deployment:
-  testapp:
- branch: master
-commands:
- — ./scripts/add-key.sh
- — bundle exec fastlane inhouse
- — ./scripts/remove-key.sh
+  beta_distribution: # just a label, can be anything
+    branch: master
+      commands:
+        # this will build the ipa file
+        - gym --scheme "App" --workspace "App.xcworkspace"
