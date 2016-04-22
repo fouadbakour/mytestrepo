@@ -6,3 +6,10 @@ general:
 machine:
   xcode:
     version: "7.2"
+deployment:
+  testapp:
+ branch: master
+commands:
+ — ./scripts/add-key.sh
+ — bundle exec fastlane inhouse
+ — ./scripts/remove-key.sh
