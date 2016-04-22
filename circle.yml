@@ -6,15 +6,3 @@ general:
 machine:
   xcode:
     version: "7.2"
-  environment:
-    # please specify your code signing identity name here
-    GYM_CODE_SIGNING_IDENTITY: "iPhone Distribution: Fouad Bakour (LPSJ2534Z4)"
-
-
-
-deployment:
-  beta_distribution: # just a label, can be anything
-    branch: master
-      commands:
-        # this will build the ipa file
-        - gym --scheme "testappNewScheme" --workspace "project.xcworkspace"
