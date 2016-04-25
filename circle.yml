@@ -10,21 +10,6 @@ machine:
     # please specify your code signing identity name here
     GYM_CODE_SIGNING_IDENTITY: "iPhone Distribution: Fouad Bakour (LPSJ2534Z4)"
 
-test:
-  override:
-    - set -o pipefail &&
-      xcodebuild
-        CODE_SIGNING_REQUIRED=NO # no need to do code signing at this point
-        #CODE_SIGN_IDENTITY=''
-        PROVISIONING_PROFILE= "AppStore_GlancingRelic.XpressMusic.mobileprovision"
-        -sdk iphonesimulator
-        -destination 'platform=iOS Simulator,OS=9.0,name=iPhone 6'
-        -workspace project.xcworkspace
-        -scheme "testappNewScheme"
-        clean build test |
-      tee $CIRCLE_ARTIFACTS/xcode_raw.log |
-      xcpretty --color --report junit --output $CIRCLE_TEST_REPORTS/xcode/results.xml
-
 deployment:
   beta_distribution: # just a label, can be anything
     branch: master
