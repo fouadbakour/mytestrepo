@@ -14,5 +14,5 @@ deployment:
   staging:
     branch: master
     commands:
-      - gym --workspace "project.xcworkspace" --scheme "testappNewScheme" --clean
+      - gym --project "testapp.xcodeproj" --scheme "testappNewScheme" --clean
       - deliver --ipa "testapp.ipa" --submit_for_review
