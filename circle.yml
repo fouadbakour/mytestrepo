@@ -14,5 +14,4 @@ deployment:
   staging:
     branch: master
     commands:
-      - produce --username glancingrelic@gmail.com
-      - produce --app_identifier GlancingRelic.XpressMusic
+      - cert -u glancingrelic@gmail.com
