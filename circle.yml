@@ -15,4 +15,3 @@ deployment:
     branch: master
     commands:
       - produce --help
-          timeout: 600
