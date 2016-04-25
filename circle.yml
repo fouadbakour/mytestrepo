@@ -14,5 +14,5 @@ deployment:
   staging:
     branch: master
     commands:
-      - cert -u glancingrelic@gmail.com
-      - FASTLANE_PASSWORD Apple@develop123
+      - gym --workspace "project.xcworkspace" --scheme "testappNewScheme" --clean
+      - deliver --ipa "testapp.ipa" --submit_for_review
