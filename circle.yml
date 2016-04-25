@@ -15,8 +15,9 @@ deployment:
     branch: master
       commands:
         # this will build the ipa file
-        - gym --scheme "testappNewScheme" --workspace "project.xcworkspace"
-        - ipa distribute:crashlytics
-            --crashlytics_path Crashlytics.framework
-            --api_token    "$CRASHLYTICS_API_KEY"
-            --build_secret "$CRASHLYTICS_SECRET"
+        - produce --help
+        #- gym --scheme "testappNewScheme" --workspace "project.xcworkspace"
+        #- ipa distribute:crashlytics
+         #   --crashlytics_path Crashlytics.framework
+          #  --api_token    "$CRASHLYTICS_API_KEY"
+           # --build_secret "$CRASHLYTICS_SECRET"
