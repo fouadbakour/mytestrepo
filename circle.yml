@@ -6,23 +6,23 @@ general:
 machine:
   xcode:
     version: "7.2"
-  environment:
+  #environment:
     # please specify your code signing identity name here
-    GYM_CODE_SIGNING_IDENTITY: "iPhone Distribution: Fouad Bakour (LPSJ2534Z4)"
+    #GYM_CODE_SIGNING_IDENTITY: "iPhone Distribution: Fouad Bakour (LPSJ2534Z4)"
 
 dependencies:
   pre:
     - sudo gem install fastlane --verbose
     - fastlane-credentials add --username glancingrelic@gmail.com --password Apple@develop123
-    #- echo Apple@develop123 | produce --username glancingrelic@gmail.com
     #- echo Apple@develop123 | fastlane-credentials add --username glancingrelic@gmail.com
     
 deployment:
   staging:
     branch: master
     commands:
-      #- fastlane-credentials add --username glancingrelic@gmail.com --password Apple@develop123
+      - cert -u glancingrelic@gmail.com
       - produce --username glancingrelic@gmail.com --app_identifier com.eurisko.testapp --app_name Test App --app_version 1.0 --sku sku1234testapp --language English --company_name Eurisko Mobility
+      - sigh -a com.eurisko.testapp  -u glancingrelic@gmail.com
       #- echo Apple@develop123 | produce --username glancingrelic@gmail.com
       #- gym --project "testapp.xcodeproj" --scheme "testappNewScheme" --clean
       #- deliver --ipa "testapp.ipa" --submit_for_review
