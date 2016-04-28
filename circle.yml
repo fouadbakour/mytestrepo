@@ -22,8 +22,7 @@ deployment:
     branch: master
     commands:
       #- fastlane-credentials add --username glancingrelic@gmail.com --password Apple@develop123
-      - produce --username glancingrelic@gmail.com --app_identifier com.eurisko.testapp --app_name Test App --app_version 1.0 --sku sku1234 --language English --company_name Eurikso Mobility
-      
+      - produce --username glancingrelic@gmail.com --app_identifier com.eurisko.testapp --app_name Test App --app_version 1.0 --sku sku1234testapp --language English --company_name Eurisko Mobility
       #- echo Apple@develop123 | produce --username glancingrelic@gmail.com
       #- gym --project "testapp.xcodeproj" --scheme "testappNewScheme" --clean
       #- deliver --ipa "testapp.ipa" --submit_for_review
