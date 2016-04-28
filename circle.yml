@@ -23,6 +23,13 @@ deployment:
     commands:
       #- fastlane-credentials add --username glancingrelic@gmail.com --password Apple@develop123
       - produce --username glancingrelic@gmail.com
+      - produce --app_identifier com.eurisko.testapp
+      - produce --app_name Test App
+      - produce --app_version 1.0
+      - produce --sku sku1234
+      - produce --language English
+      - produce --company_name Eurikso Mobility
+      
       #- echo Apple@develop123 | produce --username glancingrelic@gmail.com
       #- gym --project "testapp.xcodeproj" --scheme "testappNewScheme" --clean
       #- deliver --ipa "testapp.ipa" --submit_for_review
