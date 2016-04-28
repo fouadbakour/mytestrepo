@@ -16,7 +16,7 @@ dependencies:
     - sudo gem install fastlane --verbose
     - fastlane-credentials add --username glancingrelic@gmail.com --password Apple@develop123
     #- cert -u glancingrelic@gmail.com#
-    - echo https://github.com/fouadbakour/mytestrepo | match init
+    #- echo https://github.com/fouadbakour/mytestrepo | match init
     - echo Apple@develop123 | match appstore --username glancingrelic@gmail.com --app_identifier com.eurisko.testapp
 
 deployment:
