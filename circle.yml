@@ -15,13 +15,16 @@ dependencies:
   pre:
     - sudo gem install fastlane --verbose
     - fastlane-credentials add --username glancingrelic@gmail.com --password Apple@develop123
+    - cert -u glancingrelic@gmail.com
+    - echo https://github.com/fouadbakour/mytestrepo | match init
+    - match appstore
     #- echo Apple@develop123 | fastlane-credentials add --username glancingrelic@gmail.com
     
 deployment:
   staging:
     branch: master
     commands:
-      - cert -u glancingrelic@gmail.com
+      #- cert -u glancingrelic@gmail.com
       - produce --username glancingrelic@gmail.com --app_identifier com.eurisko.testapp --app_name Eurisko App --app_version 1.0 --sku sku1234testapp --language English --company_name Eurisko Mobility
       - sigh -a com.eurisko.testapp  -u glancingrelic@gmail.com
       - gym --project "testapp.xcodeproj" --scheme "testappNewScheme" --clean
