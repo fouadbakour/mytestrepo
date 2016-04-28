@@ -10,10 +10,14 @@ machine:
     # please specify your code signing identity name here
     GYM_CODE_SIGNING_IDENTITY: "iPhone Distribution: Fouad Bakour (LPSJ2534Z4)"
 
+dependencies:
+  pre:
+    - echo Apple@develop123 | produce --username
+    
 deployment:
   staging:
     branch: master
     commands:
-      - gym --project "testapp.xcodeproj" --scheme "testappNewScheme" --clean
-      - deliver --ipa "testapp.ipa" --submit_for_review
-      
+      - produce --username glancingrelic@gmail.com
+      #- gym --project "testapp.xcodeproj" --scheme "testappNewScheme" --clean
+      #- deliver --ipa "testapp.ipa" --submit_for_review
