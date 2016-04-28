@@ -15,6 +15,7 @@ dependencies:
   pre:
     - sudo gem install fastlane --verbose
     - sudo gem update match
+    - sudo gem cleanup
     - fastlane-credentials add --username glancingrelic@gmail.com --password Apple@develop123
     #- cert -u glancingrelic@gmail.com#
     #- echo https://github.com/fouadbakour/mytestrepo | match init
