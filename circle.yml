@@ -8,8 +8,8 @@ machine:
     version: "7.2"
   environment:
     # please specify your code signing identity name here
-    #GYM_CODE_SIGNING_IDENTITY: "iPhone Distribution: Fouad Bakour (LPSJ2534Z4)"
-    CODE_SIGN_IDENTITY = "iPhone Distribution";
+    GYM_CODE_SIGNING_IDENTITY: "iPhone Distribution"
+    #CODE_SIGN_IDENTITY = "iPhone Distribution";
 
 dependencies:
   pre:
