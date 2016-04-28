@@ -4,8 +4,6 @@ general:
   # build_dir: ios-app
 
 machine:
-  ruby:
-    version: 2.3.1
   xcode:
     version: "7.2"
   environment:
@@ -14,6 +12,7 @@ machine:
 
 dependencies:
   pre:
+    - sudo gem install fastlane --verbose
     - fastlane-credentials add --username glancingrelic@gmail.com --password Apple@develop123
     #- echo Apple@develop123 | produce --username glancingrelic@gmail.com
     #- echo Apple@develop123 | fastlane-credentials add --username glancingrelic@gmail.com
