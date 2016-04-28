@@ -4,6 +4,8 @@ general:
   # build_dir: ios-app
 
 machine:
+  ruby:
+    version: 2.3.1
   xcode:
     version: "7.2"
   environment:
