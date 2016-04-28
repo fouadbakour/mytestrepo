@@ -10,9 +10,10 @@ machine:
     # please specify your code signing identity name here
     GYM_CODE_SIGNING_IDENTITY: "iPhone Distribution: Fouad Bakour (LPSJ2534Z4)"
 
-#dependencies:
- # pre:
-  #  - echo Apple@develop123 | produce --username glancingrelic@gmail.com
+dependencies:
+  pre:
+    #- echo Apple@develop123 | produce --username glancingrelic@gmail.com
+    - echo Apple@develop123 | fastlane-credentials add --username glancingrelic@gmail.com
     
 deployment:
   staging:
