@@ -9,6 +9,7 @@ machine:
   environment:
     # please specify your code signing identity name here
     GYM_CODE_SIGNING_IDENTITY: "iPhone Distribution"
+    MATCH_PASSWORD: "Apple@develop123"
     #CODE_SIGN_IDENTITY = "iPhone Distribution";
 
 dependencies:
