@@ -15,6 +15,12 @@
 		DD4BBD6A1CC9152A00AAF6F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4BBD681CC9152A00AAF6F9 /* LaunchScreen.storyboard */; };
 		DD4BBD751CC9152A00AAF6F9 /* testappTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4BBD741CC9152A00AAF6F9 /* testappTests.m */; };
 		DD4BBD801CC9152A00AAF6F9 /* testappUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4BBD7F1CC9152A00AAF6F9 /* testappUITests.m */; };
+		DD7DF55E1CD8C2470087A27E /* icon1024.png in Resources */ = {isa = PBXBuildFile; fileRef = DD7DF5581CD8C2470087A27E /* icon1024.png */; };
+		DD7DF55F1CD8C2470087A27E /* icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = DD7DF5591CD8C2470087A27E /* icon120.png */; };
+		DD7DF5601CD8C2470087A27E /* icon180.png in Resources */ = {isa = PBXBuildFile; fileRef = DD7DF55A1CD8C2470087A27E /* icon180.png */; };
+		DD7DF5611CD8C2470087A27E /* icon58.png in Resources */ = {isa = PBXBuildFile; fileRef = DD7DF55B1CD8C2470087A27E /* icon58.png */; };
+		DD7DF5621CD8C2470087A27E /* icon80.png in Resources */ = {isa = PBXBuildFile; fileRef = DD7DF55C1CD8C2470087A27E /* icon80.png */; };
+		DD7DF5631CD8C2470087A27E /* icon87.png in Resources */ = {isa = PBXBuildFile; fileRef = DD7DF55D1CD8C2470087A27E /* icon87.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,12 @@
 		DD4BBD7B1CC9152A00AAF6F9 /* testappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD4BBD7F1CC9152A00AAF6F9 /* testappUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testappUITests.m; sourceTree = "<group>"; };
 		DD4BBD811CC9152A00AAF6F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD7DF5581CD8C2470087A27E /* icon1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon1024.png; sourceTree = "<group>"; };
+		DD7DF5591CD8C2470087A27E /* icon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon120.png; sourceTree = "<group>"; };
+		DD7DF55A1CD8C2470087A27E /* icon180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon180.png; sourceTree = "<group>"; };
+		DD7DF55B1CD8C2470087A27E /* icon58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon58.png; sourceTree = "<group>"; };
+		DD7DF55C1CD8C2470087A27E /* icon80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon80.png; sourceTree = "<group>"; };
+		DD7DF55D1CD8C2470087A27E /* icon87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon87.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +93,7 @@
 		DD4BBD4E1CC9152A00AAF6F9 = {
 			isa = PBXGroup;
 			children = (
+				DD7DF5571CD8C2460087A27E /* App Icon */,
 				DD4BBD591CC9152A00AAF6F9 /* testapp */,
 				DD4BBD731CC9152A00AAF6F9 /* testappTests */,
 				DD4BBD7E1CC9152A00AAF6F9 /* testappUITests */,
@@ -138,6 +151,19 @@
 				DD4BBD811CC9152A00AAF6F9 /* Info.plist */,
 			);
 			path = testappUITests;
+			sourceTree = "<group>";
+		};
+		DD7DF5571CD8C2460087A27E /* App Icon */ = {
+			isa = PBXGroup;
+			children = (
+				DD7DF5581CD8C2470087A27E /* icon1024.png */,
+				DD7DF5591CD8C2470087A27E /* icon120.png */,
+				DD7DF55A1CD8C2470087A27E /* icon180.png */,
+				DD7DF55B1CD8C2470087A27E /* icon58.png */,
+				DD7DF55C1CD8C2470087A27E /* icon80.png */,
+				DD7DF55D1CD8C2470087A27E /* icon87.png */,
+			);
+			path = "App Icon";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,9 +269,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD7DF5611CD8C2470087A27E /* icon58.png in Resources */,
 				DD4BBD6A1CC9152A00AAF6F9 /* LaunchScreen.storyboard in Resources */,
+				DD7DF55F1CD8C2470087A27E /* icon120.png in Resources */,
+				DD7DF5601CD8C2470087A27E /* icon180.png in Resources */,
+				DD7DF5631CD8C2470087A27E /* icon87.png in Resources */,
 				DD4BBD671CC9152A00AAF6F9 /* Assets.xcassets in Resources */,
 				DD4BBD651CC9152A00AAF6F9 /* Main.storyboard in Resources */,
+				DD7DF5621CD8C2470087A27E /* icon80.png in Resources */,
+				DD7DF55E1CD8C2470087A27E /* icon1024.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,7 +376,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -387,7 +420,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -411,6 +445,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				INFOPLIST_FILE = testapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eurisko.testapp;
@@ -422,6 +458,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				INFOPLIST_FILE = testapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eurisko.testapp;
@@ -496,6 +533,7 @@
 				DD4BBD861CC9152A00AAF6F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD4BBD871CC9152A00AAF6F9 /* Build configuration list for PBXNativeTarget "testappTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +542,7 @@
 				DD4BBD891CC9152A00AAF6F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD4BBD8A1CC9152A00AAF6F9 /* Build configuration list for PBXNativeTarget "testappUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +551,7 @@
 				DD4BBD8C1CC9152A00AAF6F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
