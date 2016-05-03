@@ -34,7 +34,7 @@ deployment:
       #- sigh -a com.eurisko.testapp  -u glancingrelic@gmail.com
       - gym --project "testapp.xcodeproj" --scheme "testappNewScheme" --clean
       #- deliver generate_summary --username glancingrelic@gmail.com --app_identifier com.eurisko.testapp
-      #- snapshot --devices 'iPhone 5, iPhone 6' --project "testapp.xcodeproj"
+      - snapshot --devices 'iPhone 5' --project "testapp.xcodeproj"
       #- snapshot --stop_after_first_error --skip_open_summary
       #- gym --project "testapp.xcodeproj" --scheme "testappNewScheme" --clean
       #- deliver --ipa "testapp.ipa" --submit_for_review --username glancingrelic@gmail.com --force
