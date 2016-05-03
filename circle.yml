@@ -32,6 +32,7 @@ deployment:
       #- produce --username glancingrelic@gmail.com --app_identifier com.eurisko.testapp --app_name Eurisko App --app_version 1.0 --sku sku1234testapp --language English --company_name Eurisko Mobility
       #- sigh -a com.eurisko.testapp  -u glancingrelic@gmail.com
       - gym --project "testapp.xcodeproj" --scheme "testappNewScheme" --clean
-      - snapshot --stop_after_first_error --skip_open_summary
+      - deliver generate_summary
+      #- snapshot --stop_after_first_error --skip_open_summary
       #- gym --project "testapp.xcodeproj" --scheme "testappNewScheme" --clean
       #- deliver --ipa "testapp.ipa" --submit_for_review
