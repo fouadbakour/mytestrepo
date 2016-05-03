@@ -21,7 +21,8 @@ dependencies:
     #- cert -u glancingrelic@gmail.com#
     #- echo https://github.com/fouadbakour/mytestrepo | match init
     #- echo Apple@develop123 | match appstore --username glancingrelic@gmail.com --app_identifier com.eurisko.testapp --git_url https://github.com/fouadbakour/mytestrepo
-    - match appstore --username glancingrelic@gmail.com --app_identifier com.eurisko.testapp --git_url https://github.com/fouadbakour/mytestrepo
+    #- match appstore --username glancingrelic@gmail.com --app_identifier com.eurisko.testapp --git_url https://github.com/fouadbakour/mytestrepo
+    - match appstore --username glancingrelic@gmail.com --app_identifier com.eurisko.testapp --git_url git@github.com:fouadbakour/certificates
 
 deployment:
   staging:
