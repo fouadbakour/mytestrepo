@@ -33,7 +33,7 @@ deployment:
       #- sigh -a com.eurisko.testapp  -u glancingrelic@gmail.com
       - gym --project "testapp.xcodeproj" --scheme "testappNewScheme" --clean
       #- deliver generate_summary --username glancingrelic@gmail.com --app_identifier com.eurisko.testapp
-      - snapshot --stop_after_first_error --skip_open_summary --output_directory git+ssh://github.com/fouadbakour/mytestrepo
+      - snapshot
       #- snapshot --stop_after_first_error --skip_open_summary
       #- gym --project "testapp.xcodeproj" --scheme "testappNewScheme" --clean
       #- deliver --ipa "testapp.ipa" --submit_for_review
