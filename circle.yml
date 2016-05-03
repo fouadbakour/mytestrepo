@@ -21,6 +21,7 @@ dependencies:
     #- cert -u glancingrelic@gmail.com#
     #- echo https://github.com/fouadbakour/mytestrepo | match init
     #- echo Apple@develop123 | match appstore --username glancingrelic@gmail.com --app_identifier com.eurisko.testapp --git_url https://github.com/fouadbakour/mytestrepo
+    - produce --username glancingrelic@gmail.com --app_identifier com.eurisko.testapp --app_name Eurisko App --app_version 1.0 --sku sku1234testapp --language English --company_name Eurisko Mobility
     - match appstore --username glancingrelic@gmail.com --app_identifier com.eurisko.testapp --git_url git+ssh://github.com/fouadbakour/mytestrepo
     
 deployment:
@@ -28,7 +29,7 @@ deployment:
     branch: master
     commands:
       #- cert -u glancingrelic@gmail.com
-      - produce --username glancingrelic@gmail.com --app_identifier com.eurisko.testapp --app_name Eurisko App --app_version 1.0 --sku sku1234testapp --language English --company_name Eurisko Mobility
+      #- produce --username glancingrelic@gmail.com --app_identifier com.eurisko.testapp --app_name Eurisko App --app_version 1.0 --sku sku1234testapp --language English --company_name Eurisko Mobility
       #- sigh -a com.eurisko.testapp  -u glancingrelic@gmail.com
       - gym --project "testapp.xcodeproj" --scheme "testappNewScheme" --clean
       #- gym --project "testapp.xcodeproj" --scheme "testappNewScheme" --clean
