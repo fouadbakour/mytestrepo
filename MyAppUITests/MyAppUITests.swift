@@ -1,14 +1,14 @@
 //
-//  UITests.swift
-//  UITests
+//  MyAppUITests.swift
+//  MyAppUITests
 //
-//  Created by Shyreen on 5/3/16.
+//  Created by Shyreen on 5/4/16.
 //  Copyright © 2016 Eurisko Mobility. All rights reserved.
 //
 
 import XCTest
 
-class UITests: XCTestCase {
+class MyAppUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()
@@ -21,11 +21,10 @@ class UITests: XCTestCase {
         XCUIApplication().launch()
         
         let app = XCUIApplication()
-        //setupSnapshot(app)
+        app.launchEnvironment = [ "UITest": "1" ]
+        setupSnapshot(app)
         app.launch()
 
-        //snapshot("01LoginScreen")
-        
         // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
     
@@ -35,9 +34,6 @@ class UITests: XCTestCase {
     }
     
     func testExample() {
-        
-       
-        
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
