@@ -21,9 +21,10 @@
 		DD7DF5611CD8C2470087A27E /* icon58.png in Resources */ = {isa = PBXBuildFile; fileRef = DD7DF55B1CD8C2470087A27E /* icon58.png */; };
 		DD7DF5621CD8C2470087A27E /* icon80.png in Resources */ = {isa = PBXBuildFile; fileRef = DD7DF55C1CD8C2470087A27E /* icon80.png */; };
 		DD7DF5631CD8C2470087A27E /* icon87.png in Resources */ = {isa = PBXBuildFile; fileRef = DD7DF55D1CD8C2470087A27E /* icon87.png */; };
-		DD7DF5671CD8DBB20087A27E /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7DF5651CD8D4B80087A27E /* SnapshotHelper.swift */; };
 		DD7DF58B1CD8E2610087A27E /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7DF58A1CD8E2610087A27E /* UITests.swift */; };
-		DD7DF5921CD8E2B70087A27E /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7DF5651CD8D4B80087A27E /* SnapshotHelper.swift */; };
+		DD7DF5951CD8EB8F0087A27E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD7DF5941CD8EB8F0087A27E /* Foundation.framework */; };
+		DD7DF5961CD8EB990087A27E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD7DF5941CD8EB8F0087A27E /* Foundation.framework */; };
+		DD7DF5981CD8EC370087A27E /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7DF5971CD8EC370087A27E /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,10 +75,12 @@
 		DD7DF55C1CD8C2470087A27E /* icon80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon80.png; sourceTree = "<group>"; };
 		DD7DF55D1CD8C2470087A27E /* icon87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon87.png; sourceTree = "<group>"; };
 		DD7DF5641CD8D4B70087A27E /* testappUITests-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "testappUITests-Swift.h"; sourceTree = "<group>"; };
-		DD7DF5651CD8D4B80087A27E /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 		DD7DF5881CD8E2610087A27E /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD7DF58A1CD8E2610087A27E /* UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITests.swift; sourceTree = "<group>"; };
 		DD7DF58C1CD8E2610087A27E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD7DF5941CD8EB8F0087A27E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DD7DF5971CD8EC370087A27E /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		DD7DF5991CD8ECE00087A27E /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = ../SnapshotHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD7DF5961CD8EB990087A27E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD7DF5951CD8EB8F0087A27E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,7 +120,8 @@
 		DD4BBD4E1CC9152A00AAF6F9 = {
 			isa = PBXGroup;
 			children = (
-				DD7DF5651CD8D4B80087A27E /* SnapshotHelper.swift */,
+				DD7DF5941CD8EB8F0087A27E /* Foundation.framework */,
+				DD7DF5971CD8EC370087A27E /* File.swift */,
 				DD7DF5571CD8C2460087A27E /* App Icon */,
 				DD4BBD591CC9152A00AAF6F9 /* testapp */,
 				DD4BBD731CC9152A00AAF6F9 /* testappTests */,
@@ -195,6 +201,7 @@
 		DD7DF5891CD8E2610087A27E /* UITests */ = {
 			isa = PBXGroup;
 			children = (
+				DD7DF5991CD8ECE00087A27E /* SnapshotHelper.swift */,
 				DD7DF58A1CD8E2610087A27E /* UITests.swift */,
 				DD7DF58C1CD8E2610087A27E /* Info.plist */,
 			);
@@ -368,6 +375,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD7DF5981CD8EC370087A27E /* File.swift in Sources */,
 				DD4BBD621CC9152A00AAF6F9 /* ViewController.m in Sources */,
 				DD4BBD5F1CC9152A00AAF6F9 /* AppDelegate.m in Sources */,
 				DD4BBD5C1CC9152A00AAF6F9 /* main.m in Sources */,
@@ -386,7 +394,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD7DF5671CD8DBB20087A27E /* SnapshotHelper.swift in Sources */,
 				DD4BBD801CC9152A00AAF6F9 /* testappUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,7 +402,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD7DF5921CD8E2B70087A27E /* SnapshotHelper.swift in Sources */,
 				DD7DF58B1CD8E2610087A27E /* UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -675,6 +681,7 @@
 				DD7DF5911CD8E2610087A27E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

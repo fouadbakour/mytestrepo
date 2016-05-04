@@ -7,7 +7,6 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "testappUITests-Swift.h"
 
 @interface testappUITests : XCTestCase
 
