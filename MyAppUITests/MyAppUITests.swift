@@ -24,6 +24,8 @@ class MyAppUITests: XCTestCase {
         app.launchEnvironment = [ "UITest": "1" ]
         setupSnapshot(app)
         app.launch()
+        
+        snapshot("0Launch")
 
         // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
