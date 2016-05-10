@@ -4,9 +4,9 @@ xcode_project: testapp.xcodeproj # path to your xcodeproj folder
 xcode_scheme: testappNewScheme
 
 env:
-  matrix:
-    - GYM_CODE_SIGNING_IDENTITY: "iPhone Distribution"
-    - MATCH_PASSWORD: "Apple@develop123"
+  global:
+    - GYM_CODE_SIGNING_IDENTITY="iPhone Distribution"
+    - MATCH_PASSWORD="Apple@develop123"
 
 before_install:
     - sudo gem install fastlane --verbose
@@ -17,7 +17,7 @@ before_install:
     #- echo https://github.com/fouadbakour/mytestrepo | match init
     #- echo Apple@develop123 | match appstore --username glancingrelic@gmail.com --app_identifier com.eurisko.testapp --git_url https://github.com/fouadbakour/mytestrepo
     - produce --username glancingrelic@gmail.com --app_identifier com.eurisko.testapp --app_name Eurisko App --app_version 1.0 --sku sku1234testapp --language English --company_name Eurisko Mobility
-    - match appstore --username glancingrelic@gmail.com --app_identifier com.eurisko.testapp --git_url git+ssh://github.com/fouadbakour/mytestrepo
+    - match appstore --username glancingrelic@gmail.com --app_identifier com.eurisko.testapp --git_url https://github.com/fouadbakour/mytestrepo
     
 script:
       #- cert -u glancingrelic@gmail.com
