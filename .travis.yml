@@ -1,22 +1,12 @@
 language: objective-c
 osx_image: xcode7.3 
 
-general:
-  # if the application is *not* in the root of the repo but
-  # in the sub-directory called "ios-app"#
-  # build_dir: ios-app #
-
-machine:
-  xcode:
-    version: "7.2"
-  environment:
-    # please specify your code signing identity name here
-    GYM_CODE_SIGNING_IDENTITY: "iPhone Distribution"
-    MATCH_PASSWORD: "Apple@develop123"
-    #CODE_SIGN_IDENTITY = "iPhone Distribution";
-
-dependencies:
-  pre:
+env:
+  matrix:
+    - GYM_CODE_SIGNING_IDENTITY: "iPhone Distribution"
+    - MATCH_PASSWORD: "Apple@develop123"
+    
+before_install:
     - sudo gem install fastlane --verbose
     - sudo gem update match
     - sudo gem cleanup
@@ -27,10 +17,7 @@ dependencies:
     - produce --username glancingrelic@gmail.com --app_identifier com.eurisko.testapp --app_name Eurisko App --app_version 1.0 --sku sku1234testapp --language English --company_name Eurisko Mobility
     - match appstore --username glancingrelic@gmail.com --app_identifier com.eurisko.testapp --git_url git+ssh://github.com/fouadbakour/mytestrepo
     
-deployment:
-  staging:
-    branch: master
-    commands:
+script:
       #- cert -u glancingrelic@gmail.com
       #- produce --username glancingrelic@gmail.com --app_identifier com.eurisko.testapp --app_name Eurisko App --app_version 1.0 --sku sku1234testapp --language English --company_name Eurisko Mobility
       #- sigh -a com.eurisko.testapp  -u glancingrelic@gmail.com
