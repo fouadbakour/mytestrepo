@@ -1,5 +1,8 @@
 language: objective-c
 osx_image: xcode7.3 
+xcode_project: testapp.xcodeproj # path to your xcodeproj folder
+xcode_scheme: testappNewScheme
+
 env:
   matrix:
     - GYM_CODE_SIGNING_IDENTITY: "iPhone Distribution"
