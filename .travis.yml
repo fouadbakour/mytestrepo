@@ -1,3 +1,6 @@
+language: objective-c
+osx_image: xcode7.3 
+
 general:
   # if the application is *not* in the root of the repo but
   # in the sub-directory called "ios-app"#
