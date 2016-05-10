@@ -1,9 +1,9 @@
 language: objective-c
 osx_image: xcode7.3 
 
-env:
-    - GYM_CODE_SIGNING_IDENTITY: "iPhone Distribution"
-    - MATCH_PASSWORD: "Apple@develop123"
+#env:
+ #   - GYM_CODE_SIGNING_IDENTITY: "iPhone Distribution"
+  #  - MATCH_PASSWORD: "Apple@develop123"
     
 before_install:
     - sudo gem install fastlane --verbose
